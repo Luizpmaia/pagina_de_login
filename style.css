@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(24, 68, 109, 0.575);
+}
+
+.telaDeFundo {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#deserto {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#nuvem {
+    position: absolute;
+    width: 75%;
+    animation: movimentoNuvem 40s linear infinite;
+    top: 0;
+    left: -75%;
+}
+
+#form {
+    background-color: rgba(227, 255, 255, 0.2);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    position: relative;
+
+    margin: auto;
+    padding: 1em;
+
+    bottom: 9em;
+    width: 15em;
+    height: auto;
+
+    border: solid 5px;
+    border-radius: 20px;
+    border-color: rgb(116, 52, 0, 0.2);
+    font-weight: 700;
+    font-size: 1em;
+    font-family: cursive;
+}
+
+.caixa2 {
+    position: relative;
+    margin: auto 0 0 auto;
+}
+
+#form span {
+    display: grid;
+}
+
+
+#form div input {
+    border-radius: 8px;
+    width: auto;
+}
+
+
+#logar {
+    background-color: rgb(227, 255, 255, 0.2);
+    transition: 0.5s all;
+
+    height: 5.2em;
+
+    display: inline;
+    position: relative;
+}
+
+#logar:hover {
+    background-color: rgb(227, 255, 255);
+    transition: 0.5s all;
+}
+
+@keyframes movimentoNuvem {
+    from {
+        left: 100%;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+
+@media (min-width: 800px) {
+    .telaDeFundo {
+        margin: auto;
+
+        position: relative;
+        max-width: 800px;
+        width: 100%;
+        height: auto;
+
+    }
+}
